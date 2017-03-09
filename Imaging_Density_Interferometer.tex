@@ -1,0 +1,63 @@
+%\RequirePackage{ifpdf}
+\pdfoutput=1
+\documentclass[cits]{JINST}
+\usepackage{amsmath}
+\let\ifpdf\relax
+
+\title{21-channel imaging electron density interferometer}
+
+\author{F. Glass\thanks{Corresponding
+author.}, J. Howard, S. R. Haskey, C. A. Michael~and B.D. Blackwell\\
+\llap{$$}Plasma Research Laboratory, The Australian National University\\
+  Canberra ACT 0200 Australia\\
+  E-mail: \email{fenton.glass@anu.edu.au}}
+
+\abstract{
+A novel 21-channel imaging interferometer for plasma density
+measurements has been designed, installed, and commissioned on the H-1 heliac.
+The new system replaces older, spatially-scanning interferometer systems\cite{WARR1997,HOWARD1992:2,HOWARD2006}, with an improvement in the temporal resolution from 1\ts{}ms to 10\ts{}$\mu$s.
+In this article we report the design and technical innovations required to construct a plasma phase-imaging, millimeter-wave interferometer.
+Guided by FDTD simulations of the wave propagation and diffraction, extensive system testing, using various corrugated targets, has confirmed diffraction-limited spatial resolution and excellent imaging fidelity in the presence of strong phase gradients.
+}
+
+\keywords{Plasma diagnostics - interferometry and imaging}
+
+\input{definitions_jnh}
+\newcommand{\ts}{\thinspace}
+
+\begin{document}
+
+\section{Introduction}
+\input{introduction}
+
+\section{Interferometer Design}
+\input{interferometer_design}
+\label{sec:interferometer_design}
+
+\section{Interferometer Components}
+\input{interferometer_components}
+\label{sec:interferometer_components}
+
+\section{Modulation strategies}
+\input{modulation_strategies}
+\label{sec:modulation_strategies}
+
+\section{System Characterization}
+\input{system_characterization}
+\label{sec:system_characterization}
+
+\section{Plasma Results}
+\input{plasma_results}
+\label{sec:plasma_results}
+
+\acknowledgments
+The authors would like to thank the H-1NF team for continued support
+of experimental operations.
+This work was supported by the Education Investment Fund under the
+Super Science Initiative of the Australian Government.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+\end{document}

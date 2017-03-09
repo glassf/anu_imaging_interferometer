@@ -1,0 +1,293 @@
+%%%%% some definitions %%%%%%
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\bd{\begin{description}}
+\def\ed{\end{description}}
+\def\bi{\begin{itemize}}
+\def\ei{\end{itemize}}
+\def\bc{\begin{center}}
+\def\ec{\end{center}}
+
+\def\non{\nonumber}
+\def\infint{\int_{-\infty}^{\infty}}
+\def\dinfint{\int\!\!\int_{-\infty}^{\infty}}
+\def\bm#1{\mbox{\boldmath ${#1}$}}
+\def\deg#1{${#1}^{\rm o}$}
+\def\mod#1{\mid \! {#1} \! \mid}
+\def\abs#1{\mid\!\! {#1} \!\! \mid}
+\def\norm#1{\parallel {#1}\parallel}
+\def\mean#1{\langle {#1}\rangle}
+\def\eq#1{Eq. ({#1})}
+\def\vol#1{\underbar{#1}}
+\def\notll{\ll\!\!\!\!\!\! /\,\,\,\,\,}
+\def\lsimeq{\;\raise.6ex\hbox{$<$}\mskip-13.5mu\lower.6ex\hbox{$\sim$}\;}
+\def\gsimeq{\;\raise.6ex\hbox{$>$}\mskip-13.5mu\lower.6ex\hbox{$\sim$}\;}
+\def\etal{{\it et al. }}
+
+
+\def\apriori{{\it a priori }}
+\def\aposteriori{{\it a posteriori }}
+\def\prll{\parallel}
+\def\eq#1{Eq.~(\ref{#1})}
+\def\Fig#1{Fig.~\ref{#1}}
+\def\fig#1{Fig.~\ref{#1}}
+
+\def\curl{\nabla {\bm \times}}
+\def\grad{\nabla}
+\def\div{\nabla {\bm .}}
+\def\idot{\bm .}
+\def\cross{\bm \times}
+\def\deriv#1{\stackrel{\bm .}{#1}}
+\def\ds#1{\displaystyle #1}
+\def\ne{n_{\rm e}}
+\def\w0{{{{\rm w}}_0}}
+\def\w{{\rm w}}
+\def\bn{{\bm n}}
+\def\bC{{\bm C}}
+\def\bc{{\bm c}}
+\def\bN{{\bm N}}
+\def\bH{{\bm H}}
+\def\un{\hat{\bm n}}
+\def\ui{\hat{\bm i}}
+\def\uj{\hat{\bm j}}
+\def\uk{\hat{\bm k}}
+\def\utheta{\hat{\bm \theta}}
+\def\uphi{\hat{\bm phi}}
+\def\ur{\hat{\bm r}}
+\def\uz{\hat{\bm z}}
+\def\uB{\hat{\bm B}}
+\def\utheta{\hat{\bm \theta}}
+\def\bB{{\bm B}}
+\def\bD{{\bm D}}
+\def\bT{{\bm T}}
+\def\bw{{\bm w}}
+\def\bW{{\bm W}}
+\def\bp{{\bm p}}
+\def\bP{{\bm P}}
+\def\bq{{\bm q}}
+\def\p{{u}}
+\def\l{{\bm l}}
+\def\t{{\rm t}}
+\def\cbar{\bar{c}}
+\def\Cbar{\bar{C}}
+\def\c{{\rm c}}
+\def\d{{\rm d}}
+\def\s{{\rm s}}
+\def\sn{{\eta }}
+\def\dn{{\xi }}
+\def\u{{\bm u}}
+\def\U{{\bm U}}
+\def\v{{\bm v}}
+\def\V{{\bm V}}
+\def\Q{{\bm Q}}
+\def\t{{\rm t}}
+\def\Ne{N_{\rm e}}
+\def\me{m_{\rm e}}
+\def\re{r_{\rm e}}
+\def\ncr{n_{\rm cr}}
+\def\lo#1{{#1}_{\rm LO}}
+\def\r{{\bm r} }
+\def\bkap{ {\bm \kappa} }
+\def\brho{ {\bm \rho} }
+\def\bsig{ {\bm \sig} }
+\def\kaperp{ {{\bm \kappa}_{\perp}} }
+\def\Kperp{ {{\bm K}_{\perp}} }
+\def\kperp{ {{\bm k}_{\perp}} }
+\def\kperpr{ {{\bm k}^{\prime }_{\perp}} }
+\def\Kperpr{ {{\bm K}^{\prime }_{\perp}} }
+\def\q{{\bm q} }
+\def\bs{{\bm s} }
+\def\R{{\bm R} }
+\def\E{{\bm E} }
+\def\bE{{\bm E} }
+\def\bEperp{ {{\bm E}_{\perp} } }
+\def\bvperp{ {{\bm v}_{\perp} } }
+\def\buperp{ {{\bm u}_{\perp} } }
+\def\D{{\bm D} }
+\def\K{{\bm K} }
+\def\k0{{\bm k}_0}
+\def\ks{{\bm k}_{\rm s}}
+\def\k{{\bm k}}
+\def\z{{\bm z}}
+\def\ulo{u_{\rm LO}}
+\def\lens{\alpha}
+\def\mix{r}
+\def\avb{\mbox{$<\!\!\beta\!\!>$}}
+\def\avg#1{\mbox{$<\!\!#1\!\!>$}}					 	
+\def\Evec{{\bm E}}
+\def\Fvec{{\bm F}}
+\def\jvec{{\bm j}}
+\def\kvec{{\bm k}}
+\def\vvec{{\bm v}}
+\def\Bvec{{\bm B}}  % bold B (vector)
+\def\Rvec{{\bm R}}
+\def\rvec{{\bm r}}
+\def\bGamma{{\bm \Gamma}}
+\def\Grad{\nabla}
+\def\cross{{\bm \times}}
+\def\gsimeq{\;\raise.6ex\hbox{$>$}\mskip-13.5mu\lower.6ex\hbox{$\sim$}\;}
+\def\iotabar{{\lower1pt\hbox{$\mathchar'40$}\mskip-5.5mu\imath}}
+\def\me{m_{\rm e}}	\def\mi{m_{\rm i}}
+\def\ne{n_{\rm e}}	\def\ni{n_{\rm i}}	
+\def\mue{\mu_{\rm e}}	\def\mui{\mu_{\rm i}}	
+\def\De{D_{\rm e}}	\def\Di{D_{\rm i}}	
+\def\qe{q_{\rm e}}	\def\qi{q_{\rm i}}	
+\def\nn{n_{\rm n}}	\def\na{n_{\rm a}}
+\def\Te{T_{\rm e}}	\def\Ti{T_{\rm i}}
+\def\TeV{T_{\rm e(eV)}}
+\def\nD{n_{\rm D}}
+\def\lD{\lambda_{\rm D}}
+\def\qe{e}
+\def\nuei{\nu_{\rm ei}}
+\def\nuii{\nu_{\rm ii}}
+\def\nuen{\nu_{\rm en}}
+\def\wc{\omega_{\rm c}}
+\def\wp{\omega_{\rm p}}
+\def\wcs#1{\omega_{{\rm c}#1}}
+\def\wce{\wcs{\rm e}}
+\def\wci{\wcs{\rm i}}
+\def\rL{r_{\rm L}}
+\def\rLe{r_{\rm Le}}
+\def\rLi{r_{\rm Li}}
+\def\kperp{\k_\perp}
+\def\kpll{\k_\parallel}
+\def\k{k}
+\def\v{v}	% allows me to choose a script v
+\def\bu{{\bm u}}
+\def\bui{{\bm u}_{\rm i}}
+\def\bue{{\bm u}_{\rm e}}
+\def\bv{{\bm v}}
+\def\bS{{\bm S}}
+\def\bj{{\bm j}}
+\def\bvav{\bar{\bm v}}
+\def\vperp{v_\perp}
+\def\vpll{v_\parallel}
+\def\vphi{v_\phi}	% phase velocity
+\def\upll{u_\parallel}
+\def\uperp{u_\perp}
+\def\uphi{u_phi}	% phase velocity
+\def\r{{\bm r}}
+\def\bV{{\bm V}}
+\def\ba{{\bm a}}
+\def\bA{{\bm A}}
+\def\bg{{\bm g}}
+\def\bF{{\bm F}}
+\def\bK{{\bm K}}
+\def\bk{{\bm k}}
+\def\ve{v_{e}}
+\def\vth{v_{\rm th}}
+\def\vthi{v_{\rm thi}}
+\def\vthe{v_{\rm the}}
+\def\vph{v_{\rm ph}}
+\def\v2bar{\overline{v^2}}
+\def\vrms{v_{\rm rms}}
+\def\eps0{\varepsilon_0}	% more like upper case epsilon
+\def\epsr{\varepsilon_r}	% more like upper case epsilon
+\def\Vi{V_{i}}
+\def\Bo{B_{0}}
+\def\w{\omega}
+\def\wpe{\omega_{\rm pe}}
+\def\wpi{\omega_{\rm pi}}
+\def\wp{\omega_{\rm p}}
+\def\wh{\omega_{\rm h}}
+\def\ld{\lambda_{\rm D}}
+\def\lde{\lambda_{\rm De}}
+\def\kb{K}
+%\def\vrms{v_{\rm rms}}
+%\def\vpeak{v_{\rm peak}}
+\def\lnlambda{\ln{\Lambda}}
+\def\sigmacei{\sigma_{\rm coulomb}^{\rm ei}}
+\def\csen{\sigma_{\rm en}}
+\def\csei{\sigma_{\rm ei}}
+\def\csin{\sigma_{\rm in}}
+\def\lnL{\ln\Lambda}
+\def\tento#1{\times 10^{#1}}
+\def\et{\vec{\vec{\epsilon}}}
+\def\etapar{\eta_{\parallel}}
+\def\half{{1\over 2}}
+\def\mfp{\lambda_{\rm mfp}}
+\def\avg#1{\langle{#1}\rangle}
+\def\i{{\rm i}}
+\def\mat#1{\stackrel{\leftrightarrow}{\displaystyle #1}}
+\def\fs{f_{\alpha}(\r , \bv , t)}
+\def\fM{f_{\rm M}}
+\def\dfdt{\frac{\partial f}{\partial t}}
+\def\dfdx{\frac{\partial f}{\partial x}}
+\def\dfdv{\frac{\partial f}{\partial v}}
+\def\dfdtc{\left(\dfdt\right)_{\rm coll}}
+\def\pd#1#2{\frac{\partial #1}{\partial #2}}
+\def\ppd#1#2{\frac{\partial^2 #1}{\partial {#2}^2}}
+\def\dd#1#2{\frac{\d #1}{\d #2}}
+\def\divr{{\bm\nabla}_{r}\idot}
+\def\divv{{\bm\nabla}_{v}\idot}
+\def\eiwt{\exp{(-\i\omega t)}}
+\def\ejwt{\exp{(-\i\omega t)}}
+\def\wwwave{\exp{(\i\k\idot\r -\i\omega t)}}
+\def\wave{\exp{(\i kx -\i\omega t)}}
+\def\Alfven{{Alfv\'{e}n}}
+% defines units for Latex2e and after:  Latex and Tex model in defunit.tex  bdb 1986
+\def\kA{{\rm\thinspace kA}}
+\def\Torr{{\rm\thinspace Torr}}
+\def\Gauss{{\rm\thinspace Gauss}}
+\def\m3{${\rm m}^{-3}$}
+\def\kB{k_{\rm B}}
+\newcommand{\degrees}{\ensuremath{^{\rm o}}} % urk: what a cheat!
+\newcommand{\eV}{\ensuremath{{\rm\thinspace e{\kern-1pt}V}}}
+\newcommand{\keV}{\ensuremath{{\rm\thinspace ke{\kern-1pt}V}}}
+\newcommand{\kV}{\ensuremath{{\rm\thinspace k{\kern-1pt}V}}}
+\newcommand{\Volt}{\ensuremath{{\rm\thinspace V}}}
+\newcommand{\Amp}{\ensuremath{{\rm\thinspace A}}}
+\newcommand{\mA}{\ensuremath{{\rm\thinspace mA}}}
+\newcommand{\uA}{\ensuremath{\thinspace\mu{\rm A}}}   % only works in math mode now - fix me please!??
+\newcommand{\kW}{\ensuremath{{\rm\thinspace kW}}}
+\newcommand{\kG}{\ensuremath{{\rm\thinspace kG}}}
+\newcommand{\Kelvin}{\ensuremath{{\rm\thinspace K}}}
+\newcommand{\gauss}{\ensuremath{{\rm\thinspace gauss}}}
+\newcommand{\T}{\ensuremath{{\rm\thinspace T}}}
+\newcommand{\Tesla}{\ensuremath{{\rm\thinspace T}}}
+\newcommand{\Hz}{\ensuremath{{\rm\thinspace Hz}}}
+%\newcommand{\ms}{\ensuremath{{\rm\thinspace ms}}}
+\newcommand{\us}{\ensuremath{{\thinspace\mu \rm s}}}
+\newcommand{\kHz}{\ensuremath{{\rm\thinspace kHz}}}
+\newcommand{\MHz}{\ensuremath{{\rm\thinspace MHz}}}
+%\newcommand{\cm3}{\ensuremath{{\rm\thinspace cm^3}}}     % I think this is always overridden by \cm
+%\newcommand{\cmm3}{\ensuremath{{\rm\thinspace cm^{-3}}}}
+%\newcommand{\cm}{\ensuremath{{\rm\thinspace cm}}}
+%\newcommand{\mm}{\ensuremath{{\rm\thinspace mm}}}
+\newcommand{\mic}{\ensuremath{\rm{micron}}}
+\newcommand{\um}{\ensuremath{{\thinspace\mu \rm m}}}
+%\newcommand{\pcm3}{\ensuremath{{\rm\thinspace /cm^3}}}
+% this version (Captialized) needs the {}, but no spaces
+%\newcommand{\Sci}{\ensuremath#1e#2{#1\times 10^{#2}}}   %usage: $ x = \sci{2.5e-4}$
+%\newcommand{\sci}{\ensuremath#1e#2 {#1\times 10^{#2}}}  %usage: $ x = \sci 2.5e-4 $ need space after -4
+%                                         otherwise arg would have to be {}'ed
+%\newcommand\pm3{{\rm\thinspace /m^3}}  interferes with \pm
+\newcommand{\metre}{\ensuremath{{\rm\thinspace m}}}
+%\newcommand{\m}{\ensuremath{{\rm\thinspace m}}}
+\def\l{{\bm l}}
+\def\hl{\hat{\bm l}}
+\def\hp{\hat{\bm p}}
+\def\hpsi{\hat{\psi}}
+\def\hchi{\hat{\chi}}
+\def\bphi{\bm{\phi}}
+\def\blambda{\bm{\lambda}}
+\def\shah{{\rm III}}
+\def\w{\xi}
+\def\wth{\w_{\rm th}}
+\def\mod#1{\mid \! {#1} \! \mid}
+\def\bbeta{{\bm\beta}}
+\def\barbeta{{\bar\beta}}
+\def\bth{{\beta_{\rm th}}}
+\def\u{{\hat{\xi}}}
+\def\u{u}
+\def\bp{{\bm\varphi}}
+\def\bpl{{\phi\hl}}
+\def\p{{\varphi}}
+\def\f{f}
+\def\bv{{\bm v}}
+\def\hatG{{\hat{G}}}
+\def\G0{{{G_0}}}
+\def\ph1{{\phi_m}}
+\def\linbo3{{${\rm LiNbO}_3$}}

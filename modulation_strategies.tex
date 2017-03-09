@@ -1,0 +1,47 @@
+\thispagestyle{empty}
+%SRH
+%The sinusoidal drive of the source and subsequent demodulation including performance.
+\subsection{Linear/sawtooth modulation}
+Initially, a sawtooth phase modulation technique was used.
+By carefully selecting the modulation depth so that the difference between the wavelength at the lowest frequency and highest frequency correspond to exactly an integer multiple of the path length difference between the probe and reference arm, this technique is essentially the same as providing a linear phase ramp.
+This has the benefit of being relatively simple to demodulate by calculating the argument of the Hilbert transform of the modulated signal, following appropriate filtering of the signal.
+The frequency response of this modulation scheme is limited by the achievable $\delta \omega / \delta t$ of the source, preventing the use of sawteeth with frequencies above 20kHz and consquently reducing the maximum bandwidth of the system to $\sim10$kHz. 
+
+While this is acceptable for looking at the slow time evolution of the plasma density, it is not very useful for looking at fluctuations such as Alfven waves, many of which have frequencies up to 40kHz on H-1NF.
+To increase the bandwidth of the system to see these fluctuations, a sinusoidal modulation scheme was used.
+\subsection{Sinusoidal modulation}
+\begin{equation}
+\label{eqn:probe_output1}
+I(t) = \frac{I_0}{2} (1 + \zeta \cos(\phi_0 + \phi_1 \sin(2 \pi f_M t))
+\end{equation}
+Which can be represented as follows where $\Gamma=\Gamma_c+i \Gamma_q=\zeta\cos(\phi_0)+i\zeta\sin(\phi_0)$:
+\begin{equation}
+\label{eqn:probe_output2}
+I(t) = \frac{I_0}{2} \{1 + \Gamma_c \cos[\phi_1 \sin(2 \pi f_M t + \epsilon)] - \Gamma_q \sin[\phi_1 \sin(2 \pi f_M t + \epsilon)]\}
+\end{equation}
+By using the following identities:
+\begin{align}
+\label{eqn:probe_output3}
+\sin [z \sin (\theta)] &= 2 \sum_{k=0}^{\infty} J_{2k +1} (z) \sin [(2k+1) \theta]~, \\
+\cos [z \sin (\theta)] &= J_0 (z) + 2 \sum_{k=0}^{\infty} J_{2k} (z) \cos (2k \theta)~,
+\end{align}
+where $J_n$ is the Bessel function of the nth order, this equation to be rewritten as:
+\begin{equation}
+\label{eqn:probe_output4}
+\begin{split}
+I(t) = \frac{I_0}{2} \{1 + \Gamma_c \sum_{k=-\infty}^{\infty} J_{2k} (\phi_1) \cos [2k (2 \pi f_M t + \epsilon)] - \\
+\Gamma_q \sum_{k=-\infty}^{\infty} J_{2k +1} (\phi_1) \sin [(2k+1)(2 \pi f_M t + \epsilon)]\}~.
+\end{split}
+\end{equation}
+Taking the Fourier transform:
+\begin{align}
+\begin{split}
+\label{eqn:fourier_representation}
+\mathcal{I} (f) = &\sum_{k=-\infty}^{\infty} J_{2k} (\phi_1) \frac{1}{2} [\exp (2k i \epsilon) (\mathcal{C}(f - 2 k f_m))] + \\
+&\frac{i}{2} \sum_{k=-\infty}^{\infty} J_{2k+1} (\phi_1) \mathcal{Q}(f - (2k+1) f_m) \exp [i(2k +1 ) \epsilon]~,
+\end{split}
+\end{align}
+results in a series of harmonics that are multiples of the source frequency modulation frequency. We want to extract $\Gamma_c (t)$, $\Gamma_q (t)$, but to do that we need to obtain $\phi_1$ and $\epsilon$.
+
+
+%The sinusoidal drive of the source and subsequent demodulation including performance.
